@@ -1,23 +1,58 @@
 @font-face { 
   font-family: 'SaraojonatanFont'; 
   src: 
-      url('fathony_king_demo.otf')  
+      url('fonts/fathony_king_demo.otf')  
       format('opentype'); 
   font-weight: normal; 
   font-style: normal; 
 } 
 
-.averia-serif-libre-light {
-  font-family: "Averia Serif Libre", serif;
-  font-weight: 300;
+@font-face {
+  font-family: 'Averia Serif Libre Regular';
   font-style: normal;
-}
+  font-weight: normal;
+  src: local('Averia Serif Libre Regular'), url('fonts/AveriaSerifLibre-Regular.woff') format('woff');
+  }
+  
 
-.averia-serif-libre-regular {
-  font-family: "Averia Serif Libre", serif;
-  font-weight: 400;
+  @font-face {
+  font-family: 'Averia Serif Libre Italic';
   font-style: normal;
-}
+  font-weight: normal;
+  src: local('Averia Serif Libre Italic'), url('fonts/AveriaSerifLibre-Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Averia Serif Libre Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Averia Serif Libre Light'), url('fonts/AveriaSerifLibre-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Averia Serif Libre Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Averia Serif Libre Light Italic'), url('fonts/AveriaSerifLibre-LightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Averia Serif Libre Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Averia Serif Libre Bold'), url('fonts/AveriaSerifLibre-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Averia Serif Libre Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Averia Serif Libre Bold Italic'), url('fonts/AveriaSerifLibre-BoldItalic.woff') format('woff');
+  }
 
 body {
   background-color: #FAF2EB;
@@ -27,7 +62,7 @@ body {
   justify-content: center;
   display: flex;
   width: 100%;
-  font-family: 'averia-serif-libre-light';
+  font-family: 'Averia Serif Libre Light';
   color: black;
 }
 
@@ -89,7 +124,7 @@ p {
 #osa_button {
   width: 20rem;
   height: 5rem;
-  font-family: 'averia-serif-libre-light';
+  font-family: 'Averia Serif Libre Light';
   font-size: 28px;
   text-transform: uppercase;
 }
