@@ -1,0 +1,101 @@
+@font-face { 
+  font-family: 'SaraojonatanFont'; 
+  src: 
+      url('fathony_king_demo.otf')  
+      format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
+
+.averia-serif-libre-light {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.averia-serif-libre-regular {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #FAF2EB;
+}
+
+#container {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-family: 'averia-serif-libre-light';
+  color: black;
+}
+
+#leftpanel {
+  width: 100px;
+  border: 2px solid black;
+  align-content: left;
+}
+
+#main_panel {
+  margin: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  flex: 1
+}
+
+#rightpanel {
+  width: 100px;
+  border: 2px solid black;
+  align-content: right
+}
+
+p {
+  color:black;
+  padding: 0rem 10rem 0rem 10rem;
+}
+
+.titles {
+  font-size: 28px;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 3rem 0rem 1rem 0rem;
+}
+
+.info_text {
+  font-size: 28px;
+  font-weight: normal;
+  font-style: italic;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.info_text_small {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+#saraojonatan {
+  color: #35302d;
+  font-family: 'SaraojonatanFont', sans-serif;
+  font-size: 160px;
+  font-weight: lighter;
+  margin: auto;
+  padding: 1rem 0rem 2rem 0rem;
+}
+
+#osa_button {
+  width: 20rem;
+  height: 5rem;
+  font-family: 'averia-serif-libre-light';
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#welcome-img {
+  width: 40rem;
+  border: 5px solid #c4e795;
+}
+

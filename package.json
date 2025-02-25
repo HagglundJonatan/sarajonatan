@@ -1,0 +1,26 @@
+{
+  "name": "sarajonatan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hellonode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HagglundJonatan/sarajonatan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HagglundJonatan/sarajonatan/issues"
+  },
+  "homepage": "https://github.com/HagglundJonatan/sarajonatan#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.19.0"
+  }
+}
