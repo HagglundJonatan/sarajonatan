@@ -54,35 +54,69 @@
   src: local('Averia Serif Libre Bold Italic'), url('fonts/AveriaSerifLibre-BoldItalic.woff') format('woff');
   }
 
+
 body {
-  background-color: #FAF2EB;
+  background-color: #faf2eb;
+  margin: 0rem; /* removes edge margin */
+}
+
+html::-webkit-scrollbar {
+  display: none
+};
+
+html {
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 #container {
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   width: 100%;
   font-family: 'Averia Serif Libre Light';
   color: black;
 }
 
-#leftpanel {
-  width: 100px;
-  border: 2px solid black;
+#left-panel {
+  width: auto;
   align-content: left;
+  display: block;
 }
 
-#main_panel {
-  margin: 20px 20px 20px 20px;
+@media screen and (max-width: 600px) {
+  #left-panel {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+#main-panel {
+  margin: 80px 0px 20px 0px;
   padding: 10px 10px 10px 10px;
   text-align: center;
-  flex: 1
+  flex: 1;
+  width: auto;
 }
 
-#rightpanel {
-  width: 100px;
-  border: 2px solid black;
-  align-content: right
+@media screen and (max-width: 600px) {
+  #main-panel {
+    margin: 0px 0px 20px 0px;
+    padding: 10px 0px;
+  }
+}
+
+#right-panel {
+  width: auto;
+  align-content: right;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  #right-panel {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 p {
@@ -91,46 +125,252 @@ p {
 }
 
 .titles {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
-  padding: 3rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: rgba(0, 0, 0, 0.9);
 }
 
-.info_text {
-  font-size: 28px;
+@media screen and (max-width: 600px) {
+  .titles {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .titles {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titles {
+    font-size: 20px;
+  }
+}
+
+.info-text {
+  font-size: 27px;
   font-weight: normal;
   font-style: italic;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0rem 0rem 0.5rem 0rem;
+  color: rgba(0, 0, 0, 0.9);
 }
 
-.info_text_small {
+@media screen and (max-width: 1200px) {
+  .info-text {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-text {
+    font-size: 17px;
+  }
+}
+
+.info-text-small {
   font-size: 20px;
   font-weight: normal;
   font-style: italic;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  line-height: 160%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1200px) {
+  .info-text-small {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-text-small {
+    font-size: 16px;
+  }
 }
 
 #saraojonatan {
   color: #35302d;
   font-family: 'SaraojonatanFont', sans-serif;
-  font-size: 160px;
   font-weight: lighter;
+  font-size: 160px;
   margin: auto;
   padding: 1rem 0rem 2rem 0rem;
 }
 
-#osa_button {
+@media screen and (max-width: 1200px) {
+  #saraojonatan {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #saraojonatan {  
+    font-size: 80px;
+  }
+}
+
+#osa-button {
   width: 20rem;
   height: 5rem;
   font-family: 'Averia Serif Libre Light';
   font-size: 28px;
   text-transform: uppercase;
+  border: 1px black solid;
+  background-color: #FFFBF5
 }
 
-#welcome-img {
-  width: 40rem;
-  border: 5px solid #c4e795;
+@media screen and (max-width: 600px ) {
+  #osa-button {
+    font-size: 20px;
+    width: 240px;
+    height: 56px;
+  }
 }
 
+@media screen and (min-width: 601px ) {
+  #osa {
+    margin: 6rem 0rem 6rem 0rem;
+  }
+}
+
+@media screen and (min-width: 601px ) {
+  #vigsel {
+    margin: 6rem 0rem 6rem 0rem;
+  }
+}
+
+#form {
+  margin: 1rem 2rem;
+}
+
+.center-img {
+  max-height: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+  .center-img {
+    max-height: 120px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .center-img {
+    max-height: 80px;
+  }
+}
+
+#middag-img {
+  max-height: 180px;
+}
+
+@media screen and (max-width: 1200px) {
+  #middag-img {
+    max-height: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #middag-img {
+    max-height: 120px;
+  }
+}
+
+.mobile-flower-img {
+  max-height: 140px;
+  max-width: 100px;
+}
+
+.left-side-panel-img {
+  float: left;
+  margin: 0rem 0rem 5rem 0rem;
+  max-width: 180px;
+}
+
+.right-side-panel-img {
+  float: right;
+  margin: 0rem 0rem 5rem 0rem;
+  max-width: 180px;
+}
+
+table {
+  border-spacing: 0rem;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: none;
+  }
+}
+
+.empty {
+  display: block;
+  visibility: hidden;
+  height: 160px;
+}
+
+.mobile-img-div {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 601px) {
+  .mobile-img-div {
+    display: none;
+  } 
+}
+
+#mobile-img-div-left {
+  flex: 1;
+  float: left;
+  text-align: left;
+}
+
+#mobile-img-div-right {
+  flex: 1;
+  float: right;
+  text-align: right;
+}
+
+/* Modal styling */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #faf2eb;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 15px;
+  border: 1px solid #888;
+  width: fit-content; /* Could be more or less, depending on screen size */
+  display: flex;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 4px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

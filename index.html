@@ -16,26 +16,108 @@
 
 <body>
   <div id="container">
-    <div class="rightpanel">
-      <img src="public/illustrations/Morkrosa_pion.png">
+    <div class="left-panel">
+      <table>
+        <tbody>
+          <tr>
+            <td><img class=left-side-panel-img src="public/illustrations/sidobilder/Mörkrosa_pion.png"></td>
+          </tr>
+          <tr>
+            <td><img class=left-side-panel-img src="public/illustrations/sidobilder/Tistel.png"></td>
+          </tr>
+          <tr><td><span class="empty"></span></td></tr>
+          <tr><td><span class="empty"></span></td></tr>
+          <tr>
+            <td><img class=left-side-panel-img src="public/illustrations/sidobilder/Förgetmigej.png"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="main_panel">
-      <h1 class="titles">Välkommen till vigseln mellan</h1>
-      <h3 id="saraojonatan">Sara & Jonatan</h2>
-      <img id=inline_flower1 src="public/illustrations/Ginkoblad.png">
-      <h2 class="titles">Lördagen den femte juli</h2>
-      <p class="info_text">tjugitjufem</p>
-      <br>
-      <p class="info_text">klockan 15.00</p>
-      <button id="osa_button" >Anmälan</button>
-      <p class="info_text_small">
-        I anmälan kan ni specificera hur många ni är i ert sällskap och specialkost/allergier.
-      </p>
+    <div id="main-panel">
+      <div class="mobile-img-div">
+        <div id="mobile-img-div-left">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Tistel.png">
+        </div>
+        <div id="mobile-img-div-right">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Malva.png">
+        </div>
+      </div>
+      <div id="welcome">
+        <h1 class="titles">Välkommen till vigsel & fest</h1>
+        <h3 id="saraojonatan">Sara & Jonatan</h2>
+        <img class="center-img" src="public/illustrations/Ginkoblad.png">
+        <h2 class="titles">lördagen den 5 juli 2025</h2>
+        <p class="info-text">klockan 14.00 hemma hos oss!</p>
+      </div>
+      <div class="mobile-img-div">
+        <div id="mobile-img-div-left">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Mörkrosa_pion.png">
+        </div>
+        <div id="mobile-img-div-right">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Blåklint.png">
+        </div>
+      </div>
+      <div id="osa">
+        <button id="osa-button">Anmälan</button>
+        <p class="info-text-small">
+          I anmälan kan ni specificera hur många ni är i ert sällskap och specialkost, allergier eller andra matpreferenser.  
+        </p>
+      </div>
+      <div id="osa-modal" class="modal" visi>
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe id=form src="https://docs.google.com/forms/d/e/1FAIpQLSeCAQoZ8_TbYI1ImiQgOH1Loc2vT-F5t_BZyAGfKWJ1FjpSQw/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
+        </div>
+      </div>
+      <div class="mobile-img-div">
+        <div id="mobile-img-div-left">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Förgetmigej.png">
+        </div>
+      </div>
+      <div id="vigsel">
+        <img class="center-img" src="public/illustrations/Vigsel.png">
+        <h2 class="titles">Vigsel</h2>
+        <p class="info-text-small">
+          Vår vigsel hålls vid vårt hus i Vagersta vid klockan 14.00, så kom en stund innan dess. Efter vigseln tar vi lite bubbel & snacks och visar runt i huset och på gården för nyfikna.
+        </p>
+        <h2 class="titles">Vagersta Nylunda 620 <br>69691 askersund</h2>
+      </div>
+      <div class="mobile-img-div">
+        <div id="mobile-img-div-right">
+          <img class="mobile-flower-img" src="public/illustrations/sidobilder/Löjtnanthjärta.png">
+        </div>
+      </div>
+      <div id="middag">
+        <img id="middag-img" src="public/illustrations/Middag.png">
+        <h2 class="titles">Middag & fest</h2>
+        <p class="info-text-small">
+          Efter vigseln så tar vi oss bort till mottagningen där middagen och festen hålls.
+        </p>
+        <h2 class="titles">Svinnersta kapell <br>Askersund</h2>
+      </div>
     </div>
-    <div class="leftpanel">
-      <img src="public/illustrations/Malva.png">
+    <div class="right-panel">
+      <table>
+        <tbody>
+          <tr>
+            <td><img class=right-side-panel-img src="public/illustrations/sidobilder/Malva.png"></td>
+          </tr>
+          <tr>
+            <td><img class=right-side-panel-img src="public/illustrations/sidobilder/Blåklint.png"></td>
+          </tr>
+          <tr><td><span class="empty"></span></td></tr>
+          <tr><td><span class="empty"></span></td></tr>
+          <tr><td><span class="empty"></span></td></tr>
+          <tr>
+            <td><img class=right-side-panel-img src="public/illustrations/sidobilder/Löjtnanthjärta.png"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+
+  <script src="public/modal.js"></script>
+
 </body>
 </html>
 
