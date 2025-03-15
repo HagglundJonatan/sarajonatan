@@ -133,12 +133,6 @@ p {
   color: rgba(0, 0, 0, 0.9);
 }
 
-@media screen and (max-width: 600px) {
-  .titles {
-    padding: 0rem;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .titles {
     font-size: 28px;
@@ -148,6 +142,29 @@ p {
 @media screen and (max-width: 600px) {
   .titles {
     font-size: 20px;
+    padding: 0rem;
+  }
+}
+
+.capital-text {
+  font-size: 28px;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 0rem 0rem 0rem 0rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1200px) {
+  .capital-text {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .capital-text {
+    font-size: 20px;
+    padding: 0rem;
   }
 }
 
@@ -232,13 +249,7 @@ p {
 }
 
 @media screen and (min-width: 601px ) {
-  #osa {
-    margin: 6rem 0rem 6rem 0rem;
-  }
-}
-
-@media screen and (min-width: 601px ) {
-  #vigsel {
+  .non-mobile-section {
     margin: 6rem 0rem 6rem 0rem;
   }
 }
@@ -278,6 +289,73 @@ p {
     max-height: 120px;
   }
 }
+
+#skjorta-img {
+  max-height: 220px;
+}
+
+@media screen and (max-width: 1200px) {
+  #skjorta-img {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #skjorta-img {
+    max-height: 140px;
+  }
+}
+
+#overnattning-img {
+  max-height: 220px;
+}
+
+@media screen and (max-width: 1200px) {
+  #overnattning-img {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #overnattning-img {
+    max-height: 140px;
+  }
+}
+
+
+#tal-img {
+  max-height: 220px;
+}
+
+@media screen and (max-width: 1200px) {
+  #tal-img {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tal-img {
+    max-height: 140px;
+  }
+}
+
+#liljekonvalj-img {
+  max-height: 220px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  #liljekonvalj-img {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #liljekonvalj-img {
+    max-height: 140px;
+  }
+}
+
 
 .mobile-flower-img {
   max-height: 140px;
@@ -323,16 +401,24 @@ table {
   } 
 }
 
-#mobile-img-div-left {
+.mobile-img-div-left {
   flex: 1;
   float: left;
   text-align: left;
 }
 
-#mobile-img-div-right {
+.mobile-img-div-right {
   flex: 1;
   float: right;
   text-align: right;
+}
+
+#mobile-forgetmigej {
+  max-height: 80px;
+}
+
+#mobile-rosa-pion {
+  max-height: 80px;
 }
 
 /* Modal styling */
