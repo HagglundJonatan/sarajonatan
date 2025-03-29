@@ -79,9 +79,11 @@ html {
 }
 
 #left-panel {
-  width: auto;
+  width: 25%;
   align-content: left;
   display: block;
+  margin-top: 191px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -92,25 +94,25 @@ html {
 }
 
 #main-panel {
-  margin: 80px 155px 20px 155px;
+  margin: 191px 0px 20px 0px;
   padding: 10px 10px 10px 10px;
   text-align: center;
   flex: 1;
-  width: auto;
-  /* max-width: 946px; */
+  width: 50%;
 }
 
 @media screen and (max-width: 600px) {
   #main-panel {
     margin: 0px 0px 20px 0px;
-    padding: 10px 0px;
   }
 }
 
 #right-panel {
-  width: auto;
+  width: 25%;
   align-content: right;
   display: block;
+  margin-top: 191px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -120,17 +122,28 @@ html {
   }
 }
 
+.top-margin-side-panels {
+  margin-top: 106px;
+}
+
 p {
   color:black;
   padding: 0rem 10rem 0rem 10rem;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .paragraph-div {
+    margin: 0px 100px 0 100px;
+  }
 }
 
 .titles {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
-  padding: 0.5rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -152,7 +165,7 @@ p {
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0rem 0.5rem 0rem;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -227,7 +240,7 @@ p {
   font-family: 'SaraojonatanFont', sans-serif;
   font-weight: lighter;
   font-size: 160px;
-  margin: auto;
+  margin: 40px 0px;
   padding: 1rem 0rem 2rem 0rem;
 }
 
@@ -246,11 +259,13 @@ p {
 #osa-button {
   width: 20rem;
   height: 5rem;
+  margin-bottom: 25px;
   font-family: 'Averia Serif Libre Light';
   font-size: 28px;
   text-transform: uppercase;
   border: 1px black solid;
-  background-color: #FFFBF5
+  background-color: #FFFBF5;
+  
 }
 
 @media screen and (max-width: 600px ) {
@@ -268,7 +283,7 @@ p {
 }
 
 #form {
-  margin: 1rem 2rem;
+  margin: 1rem 5rem;
   width: 100%
 }
 
@@ -379,13 +394,13 @@ p {
 .left-side-panel-img {
   float: left;
   margin: 0rem 0rem 5rem 0rem;
-  max-width: 180px;
+  max-width: 265px;
 }
 
 .right-side-panel-img {
   float: right;
   margin: 0rem 0rem 5rem 0rem;
-  max-width: 180px;
+  max-width: 265px;
 }
 
 table {
