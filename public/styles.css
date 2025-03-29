@@ -132,6 +132,12 @@ p {
   line-height: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    line-height: 34px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .paragraph-div {
     margin: 0px 100px 0 100px;
@@ -177,7 +183,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .capital-text {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0rem;
   }
 }
@@ -188,6 +194,18 @@ p {
   font-style: italic;
   padding: 0rem 0rem 0.5rem 0rem;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 1200px) {
+  .info-text-big {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-text-big {
+    font-size: 20px;
+  }
 }
 
 .info-text {
