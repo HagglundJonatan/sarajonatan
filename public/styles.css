@@ -94,7 +94,7 @@ html {
 }
 
 #main-panel {
-  margin: 191px 0px 20px 0px;
+  margin: 175px 0px 20px 0px;
   padding: 10px 10px 10px 10px;
   text-align: center;
   flex: 1;
@@ -104,6 +104,7 @@ html {
 @media screen and (max-width: 600px) {
   #main-panel {
     margin: 0px 0px 20px 0px;
+    padding: 0px;
   }
 }
 
@@ -127,7 +128,7 @@ html {
 }
 
 p {
-  color:black;
+  color: #35302D;
   padding: 0rem 10rem 0rem 10rem;
   line-height: 40px;
 }
@@ -135,6 +136,7 @@ p {
 @media screen and (max-width: 600px) {
   p {
     line-height: 34px;
+    font-size: 16px;
   }
 }
 
@@ -144,13 +146,19 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .paragraph-div-small {
+    margin: 0px 300px;
+  }
+}
+
 .titles {
   font-size: 28px;
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: #35302D;;
 }
 
 @media screen and (max-width: 1200px) {
@@ -167,23 +175,22 @@ p {
 }
 
 .capital-text {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: normal;
   font-style: italic;
   text-transform: uppercase;
-  padding: 1rem 0rem 0.5rem 0rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: #35302D;
 }
 
 @media screen and (max-width: 1200px) {
   .capital-text {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .capital-text {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0rem;
   }
 }
@@ -193,7 +200,7 @@ p {
   font-weight: normal;
   font-style: italic;
   padding: 0rem 0rem 0.5rem 0rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: #35302D;
 }
 
 @media screen and (max-width: 1200px) {
@@ -212,8 +219,10 @@ p {
   font-size: 24px;
   font-weight: normal;
   font-style: italic;
-  padding: 0rem 0rem 0.5rem 0rem;
-  color: rgba(0, 0, 0, 0.9);
+  padding: 0px 25px 10px 25px;
+  color: #35302D;
+  line-height: 160%;
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -224,7 +233,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .info-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -234,7 +243,7 @@ p {
   font-style: italic;
   line-height: 160%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  color: rgba(0, 0, 0, 0.9);
+  color: #35302D;
 }
 
 @media screen and (max-width: 1200px) {
@@ -254,11 +263,11 @@ p {
 }
 
 #saraojonatan {
-  color: #35302d;
+  color: #35302D;
   font-family: 'SaraojonatanFont', sans-serif;
   font-weight: lighter;
   font-size: 160px;
-  margin: 40px 0px;
+  margin: 40px 0px 20px 0px;
   padding: 1rem 0rem 2rem 0rem;
 }
 
@@ -275,8 +284,8 @@ p {
 }
 
 #osa-button {
-  width: 20rem;
-  height: 5rem;
+  width: 294px;
+  height: 70px;
   margin-bottom: 25px;
   font-family: 'Averia Serif Libre Light';
   font-size: 28px;
@@ -295,15 +304,17 @@ p {
 }
 
 @media screen and (min-width: 601px ) {
-  .non-mobile-section {
+  .common-section {
     margin: 6rem 0rem 6rem 0rem;
-  }
+  } 
 }
 
 #form {
   margin: 1rem 5rem;
   width: 100%
 }
+
+/* === image styling === */
 
 .center-img {
   max-height: 140px;
@@ -321,8 +332,19 @@ p {
   }
 }
 
+#vigsel-img {
+  max-width: 233px;
+  max-height: 110px;
+}
+
+#ginkoblad-img {
+  max-width: 120px;
+  max-height: 137px;
+}
+
 #middag-img {
-  max-height: 180px;
+  max-width: 320px;
+  max-height: 235px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -338,7 +360,8 @@ p {
 }
 
 #skjorta-img {
-  max-height: 220px;
+  max-width: 230px;
+  max-height: 280px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -354,7 +377,8 @@ p {
 }
 
 #overnattning-img {
-  max-height: 220px;
+  max-width: 339px;
+  max-height: 260px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -369,9 +393,9 @@ p {
   }
 }
 
-
 #tal-img {
-  max-height: 220px;
+  max-width: 220px;
+  max-height: 301px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -387,7 +411,8 @@ p {
 }
 
 #liljekonvalj-img {
-  max-height: 300px;
+  max-width: 256px;
+  max-height: 329px;
   margin: 60px 0px 160px;
 }
 
@@ -403,22 +428,32 @@ p {
   }
 }
 
-
-.mobile-flower-img {
-  max-height: 140px;
-  max-width: 100px;
-}
-
 .left-side-panel-img {
   float: left;
   margin: 0rem 0rem 5rem 0rem;
   max-width: 265px;
 }
 
+@media screen and (max-width: 1200px) {
+  .left-side-panel-img {
+    float: left;
+    margin: 0rem 0rem 5rem 0rem;
+    max-width: 200px;
+  }
+}
+
 .right-side-panel-img {
   float: right;
   margin: 0rem 0rem 5rem 0rem;
   max-width: 265px;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-side-panel-img {
+    float: right;
+    margin: 0rem 0rem 5rem 0rem;
+    max-width: 200px;
+  }
 }
 
 table {
@@ -435,6 +470,13 @@ table {
   display: block;
   visibility: hidden;
   height: 160px;
+}
+
+/* mobile */
+
+.mobile-flower-img {
+  max-height: 140px;
+  max-width: 100px;
 }
 
 .mobile-img-div {
@@ -460,15 +502,109 @@ table {
   text-align: right;
 }
 
-#mobile-forgetmigej {
+#mobile-forgetmigej-img {
   max-height: 80px;
 }
 
-#mobile-rosa-pion {
+#mobile-rosa-pion-img {
   max-height: 80px;
 }
 
-/* Modal styling */
+#mobile-tistel-img {
+
+}
+
+#mobile-malva-img {
+
+}
+
+#mobile-morkrosa-pion-img {
+
+}
+
+#mobile-blaklint-img {
+
+}
+
+#mobile-lojtnanthjarta-img {
+
+}
+
+#mobile-klover-img {
+
+}
+
+#mobile-ros-img {
+
+}
+
+#mobile-rosa-blomma-img {
+
+}
+
+/* side panel images */
+
+#morkrosa-pion-side-img {
+  max-width: 237px;
+  max-height: 220px;
+}
+
+#tistel-side-img {
+  max-width: 200px;
+  max-height: 424px;
+}
+
+#forgetmigej-side-img {
+  max-width: 173px;
+  max-height: 288px;
+}
+
+#rosa-pion-side-img {
+  max-width: 180px;
+  max-height: 235px;
+}
+
+#lila-blomma-side-img {
+  max-width: 131px;
+  max-height: 261px;
+}
+
+#vallmo-rod-side-img {
+  max-width: 229px;
+  max-height: 268px;
+}
+
+#malva-side-img {
+  max-width: 259px;
+  max-height: 555px;
+}
+
+#blaklint-side-img {
+  max-width: 265px;
+  max-height: 315px;
+}
+
+#lojtnanthjarta-side-img {
+  max-width: 180px;
+  max-height: 194px;
+}
+
+#ros-side-img {
+  max-width: 180px;
+  max-height: 248px;
+}
+
+#rosa-blomma-side-img {
+  max-width: 116px;
+  max-height: 292px;
+}
+
+#vallmo-rosa-side-img {
+  max-width: 252px;
+  max-height: 292px;
+}
+
+/* === modal styling === */
 
 .modal {
   display: none; /* Hidden by default */
