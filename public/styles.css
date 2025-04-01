@@ -75,7 +75,7 @@ html {
   display: flex;
   width: 100%;
   font-family: 'Averia Serif Libre Light';
-  color: black;
+  color: #35302D;
 }
 
 #left-panel {
@@ -158,7 +158,7 @@ p {
   font-style: italic;
   text-transform: uppercase;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  color: #35302D;;
+  color: #35302D;
 }
 
 @media screen and (max-width: 1200px) {
@@ -307,11 +307,6 @@ p {
   .common-section {
     margin: 10rem 0rem 10rem 0rem;
   } 
-}
-
-#form {
-  margin: 1rem 5rem;
-  width: 100%
 }
 
 /* === image styling === */
@@ -604,7 +599,74 @@ table {
   max-height: 292px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  #morkrosa-pion-side-img {
+    max-width: 120px;
+    max-height: 110px;
+  }
+  
+  #tistel-side-img {
+    max-width: 100px;
+    max-height: 212px;
+  }
+  
+  #forgetmigej-side-img {
+    max-width: 86px;
+    max-height: 144px;
+  }
+  
+  #rosa-pion-side-img {
+    max-width: 90px;
+    max-height: 117px;
+  }
+  
+  #lila-blomma-side-img {
+    max-width: 65px;
+    max-height: 130px;
+  }
+  
+  #vallmo-rod-side-img {
+    max-width: 114px;
+    max-height: 134px;
+  }
+  
+  #malva-side-img {
+    max-width: 129px;
+    max-height: 277px;
+  }
+  
+  #blaklint-side-img {
+    max-width: 132px;
+    max-height: 157px;
+  }
+  
+  #lojtnanthjarta-side-img {
+    max-width: 90px;
+    max-height: 97px;
+  }
+  
+  #ros-side-img {
+    max-width: 90px;
+    max-height: 124px;
+  }
+  
+  #rosa-blomma-side-img {
+    max-width: 58px;
+    max-height: 146px;
+  }
+  
+  #vallmo-rosa-side-img {
+    max-width: 126px;
+    max-height: 146px;
+  }
+}
+
 /* === modal styling === */
+
+#form {
+  margin: 5% auto;
+  width: 800px;
+}
 
 .modal {
   display: none; /* Hidden by default */
@@ -623,7 +685,7 @@ table {
 .modal-content {
   background-color: #faf2eb;
   margin: 5% auto; /* 15% from the top and centered */
-  padding: 15px;
+  /* padding: 15px; */
   border: 1px solid #888;
   width: fit-content; /* Could be more or less, depending on screen size */
   display: flex;
