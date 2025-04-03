@@ -24,3 +24,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+
+var body = document.getElementsByTagName("body");
+
+modal.on('shown', function(){
+  body.css('overflow', 'hidden');
+}).on('hidden', function(){
+  body.css('overflow', 'auto');
+})

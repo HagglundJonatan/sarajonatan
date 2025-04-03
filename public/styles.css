@@ -171,6 +171,7 @@ p {
   .titles {
     font-size: 20px;
     padding: 0rem;
+    margin: 20px 0px 5px 0px;
   }
 }
 
@@ -192,6 +193,7 @@ p {
   .capital-text {
     font-size: 16px;
     padding: 0rem;
+    margin: 0px;
   }
 }
 
@@ -199,7 +201,7 @@ p {
   font-size: 28px;
   font-weight: normal;
   font-style: italic;
-  padding: 0rem 0rem 0.5rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
   color: #35302D;
 }
 
@@ -212,6 +214,7 @@ p {
 @media screen and (max-width: 600px) {
   .info-text-big {
     font-size: 20px;
+    margin: 0px 0px 20px 0px;
   }
 }
 
@@ -267,8 +270,7 @@ p {
   font-family: 'SaraojonatanFont', sans-serif;
   font-weight: lighter;
   font-size: 160px;
-  margin: 40px 0px 20px 0px;
-  padding: 1rem 0rem 2rem 0rem;
+  margin: 30px 0px 20px 0px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -303,9 +305,19 @@ p {
   }
 }
 
-@media screen and (min-width: 601px ) {
+.common-section {
+  margin: 10rem 0rem 10rem 0rem;
+}
+
+@media screen and (max-width: 1200px) {
   .common-section {
-    margin: 10rem 0rem 10rem 0rem;
+    margin: 7rem 0rem 7rem 0rem;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .common-section {
+    margin: 0rem 0rem 0rem 0rem;
   } 
 }
 
@@ -332,9 +344,23 @@ p {
   max-height: 110px;
 }
 
+@media screen and (max-width: 600px) {
+  #vigsel-img {
+    max-width: 168px;
+    max-height: 79px;
+  }  
+}
+
 #ginkoblad-img {
   max-width: 120px;
   max-height: 137px;
+}
+
+@media screen and (max-width: 600px) {
+  #ginkoblad-img {
+    max-width: 70px;
+    max-height: 80px;
+  }
 }
 
 #middag-img {
@@ -344,13 +370,15 @@ p {
 
 @media screen and (max-width: 1200px) {
   #middag-img {
-    max-height: 160px;
+    max-width: 270px;
+    max-height: 200px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #middag-img {
-    max-height: 120px;
+    max-width: 216px;
+    max-height: 159px;
   }
 }
 
@@ -361,13 +389,15 @@ p {
 
 @media screen and (max-width: 1200px) {
   #skjorta-img {
-    max-height: 180px;
+    max-width: 210px;
+    max-height: 255px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #skjorta-img {
-    max-height: 140px;
+    max-width: 189px;
+    max-height: 231px;
   }
 }
 
@@ -378,13 +408,15 @@ p {
 
 @media screen and (max-width: 1200px) {
   #overnattning-img {
-    max-height: 180px;
+    max-width: 285px;
+    max-height: 218px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #overnattning-img {
-    max-height: 140px;
+    max-width: 230px;
+    max-height: 176px;
   }
 }
 
@@ -395,13 +427,15 @@ p {
 
 @media screen and (max-width: 1200px) {
   #tal-img {
-    max-height: 180px;
+    max-width: 180px;
+    max-height: 245px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #tal-img {
-    max-height: 140px;
+    max-width: 137px;
+    max-height: 188px;
   }
 }
 
@@ -498,43 +532,58 @@ table {
 }
 
 #mobile-forgetmigej-img {
-  max-height: 80px;
+  max-width: 73px;
+  max-height: 122px;
 }
 
 #mobile-rosa-pion-img {
-  max-height: 80px;
+  max-width: 78px;
+  max-height: 102px;
 }
 
 #mobile-tistel-img {
-
+  max-width: 93px;
+  max-height: 197px;
 }
 
 #mobile-malva-img {
-
+  max-width: 133px;
+  max-height: 231px;
 }
 
 #mobile-morkrosa-pion-img {
-
+  max-width: 100px;
+  max-height: 93px;
 }
 
 #mobile-blaklint-img {
-
+  max-width: 135px;
+  max-height: 130px;
 }
 
 #mobile-lojtnanthjarta-img {
-
+  max-width: 99px;
+  max-height: 105px;
 }
 
 #mobile-klover-img {
-
+  max-width: 54px;
+  max-height: 103px;
 }
 
 #mobile-ros-img {
-
+  max-width: 84px;
+  max-height: 116px;
 }
 
 #mobile-rosa-blomma-img {
+  max-width: 74px;
+  max-height: 150px;
+}
 
+#mobile-vallmo-rod-img {
+  max-width: 84px;
+  max-height: 116px;
 }
 
 /* side panel images */
@@ -560,8 +609,8 @@ table {
 }
 
 #lila-blomma-side-img {
-  max-width: 131px;
-  max-height: 261px;
+  max-width: 182px;
+  max-height: 318px;
 }
 
 #vallmo-rod-side-img {
@@ -621,8 +670,8 @@ table {
   }
   
   #lila-blomma-side-img {
-    max-width: 65px;
-    max-height: 130px;
+    max-width: 91px;
+    max-height: 159px;
   }
   
   #vallmo-rod-side-img {
@@ -664,8 +713,9 @@ table {
 /* === modal styling === */
 
 #form {
-  margin: 5% auto;
-  width: 800px;
+  margin: 5% auto; /* 15% from the top and centered */
+  height: 100%;
+  transform: scale(1.0);
 }
 
 .modal {
@@ -684,18 +734,32 @@ table {
 /* Modal Content/Box */
 .modal-content {
   background-color: #faf2eb;
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 1% auto; /* 15% from the top and centered */
   /* padding: 15px; */
   border: 1px solid #888;
   width: fit-content; /* Could be more or less, depending on screen size */
   display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    background-color: #faf2eb;
+    margin: 0% auto; /* 15% from the top and centered */
+    /* padding: 15px; */
+    border: 1px solid #888;
+    width: fit-content; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #76726e;
   float: right;
-  font-size: 4px;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -705,3 +769,28 @@ table {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+/* TODO
++ För surfplatta
+ - minska avstånd mellan sektioner
+ - Öka storlek på skjortan, glaset och tallriken
+ 
++ För mobil
+ - Minska ginkoblad ca 10% typ
+ - Tajta till första stycket med välkomsttext mm
+ - Fixa storlekarna för sidobilderna
+
++ Fixa krysset till höger sida 
+
++ Anmälan knapptexten är blå på Ipaden
+
++ Innehåll!!! Mer om övernattning och logistiken?
+
++ Refaktorisera 
+ - div hell, minska onödiga divar 
+ - överväg att dela isär de olika media screen anpassningarna till egna css filer eller strukturera om
+ - 
+
++ Ny illustration för Vättern! SARA!
+
