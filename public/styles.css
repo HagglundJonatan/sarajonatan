@@ -713,9 +713,16 @@ table {
 /* === modal styling === */
 
 #form {
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 0% auto; /* 15% from the top and centered */
+  width: 640px;
   height: 100%;
-  transform: scale(1.0);
+  max-height: 850px;
+}
+
+@media screen and (max-width: 600px) {
+  #form {
+    width: 380px;
+  }
 }
 
 .modal {
@@ -734,25 +741,15 @@ table {
 /* Modal Content/Box */
 .modal-content {
   background-color: #faf2eb;
-  margin: 1% auto; /* 15% from the top and centered */
+  margin: auto auto; /* 15% from the top and centered */
   /* padding: 15px; */
   border: 1px solid #888;
+  height: 100%;
   width: fit-content; /* Could be more or less, depending on screen size */
   display: flex;
   flex-direction: column;
   overflow: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .modal-content {
-    background-color: #faf2eb;
-    margin: 0% auto; /* 15% from the top and centered */
-    /* padding: 15px; */
-    border: 1px solid #888;
-    width: fit-content; /* Could be more or less, depending on screen size */
-    display: flex;
-    flex-direction: column;
-  }
+  max-height: 900px;
 }
 
 /* The Close Button */
@@ -761,6 +758,14 @@ table {
   float: right;
   font-size: 80px;
   font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .close {
+    margin: 0px;
+  }
 }
 
 .close:hover,
