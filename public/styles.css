@@ -148,7 +148,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .paragraph-div-small {
-    margin: 0px 300px;
+    margin: 0px 100px;
   }
 }
 
@@ -245,7 +245,7 @@ p {
   font-weight: normal;
   font-style: italic;
   line-height: 160%;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0px 25px 10px 25px;
   color: #35302D;
 }
 
